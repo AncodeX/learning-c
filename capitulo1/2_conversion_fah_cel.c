@@ -13,10 +13,11 @@ int main() {
     int fahr;
     /*
         iteracion: bucle for
-        condicon: si los grados fahr son menor o igual a 300 se seguira iterando
-        el ciclo termina
+        condicon: si los grados fahr son mayor o igual a 0 se seguira iterando
     */
-    for (fahr=0; fahr <= 300; fahr += 20) {
-        printf("%3.0f\t%6.1f\n", fahr, (5.0/9.0) * (fahr-32));
+    // (inicializacion; condicion; decremento)
+    for (fahr = 300; fahr > 0; fahr = fahr - 20) {
+        float celcius = (5/9.0) * (fahr-32);
+        printf("%d\t%6.1f\n", fahr, celcius);
     }
 }
