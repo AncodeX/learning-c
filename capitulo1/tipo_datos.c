@@ -7,7 +7,7 @@
     float   número decimal  {2.2, 9.98021, 2.33333}
     char    carácter        un solo byte
     short   entero corto
-    long    entero largo
+    long    entero largo 
     double  punto flotante de doble presición
 */
 
