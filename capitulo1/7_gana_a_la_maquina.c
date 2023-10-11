@@ -34,6 +34,12 @@ int main() {
         user = getchar();
         if (state == IN) {
             printf("Escogiste la letra %c\n", user);
+            
+            if (user > n_ascii) {
+                printf("La letra %c es mayor (>)\n", user);
+            } else {
+                printf("La letra %c es menor (<)\n", user);
+            }
             state = OUT;
         }
         else if (state  == OUT) {
@@ -41,6 +47,8 @@ int main() {
             printf("La maquina escogio la letra %c\n", machine);
             state = IN;
         }
+
+        
 
         if (user == n_ascii) {
             printf("Ganaste! La letra era %c", n_ascii);
